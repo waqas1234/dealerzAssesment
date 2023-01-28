@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  @apply overflow-x-hidden;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.slick-next {
+  right: 30px !important;
+}
+
+.slick-prev {
+  left: 30px !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #ff3700 !important;
+  font-size: 30px !important;
+}
+
+/* replace icons */
+.slick-next:before {
+  content: url(assets/images/arrowRight.png) !important;
+  left: 30px !important;
+}
+
+.slick-prev:before {
+  content: url(assets/images/arrowLeft.png) !important;
+  left: 30px !important;
+}
+
+
+ul.footer-list li {
+  @apply text-base font-[400] leading-[20px] flex gap-3 items-start;
+}
+
+ul.footer-list li+li {
+  @apply mt-[30px];
+}
